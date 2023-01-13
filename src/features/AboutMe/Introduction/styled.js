@@ -8,20 +8,55 @@ export const Box = styled.div`
 export const Caption = styled.span`
     font-weight: 700;
     font-size: 12px;
-    line-height: 130%;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.colors.slateGray};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+        font-size: 10px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+        font-size: 8px;
+    }
 `;
 
 export const Name = styled.h1`
     font-weight: 900;
     font-size: 38px;
-    line-height: 46px;
-    color: ${({ theme }) => theme.color.blackText};
+    color: ${({ theme }) => theme.colors.blackText};
+    margin-top: 12px;
+    margin-bottom: 35px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+        font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 28px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+        font-size: 28px;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+        font-size: 22px;
+        margin-top: 6px;
+        margin-bottom: 18px;
+    }
 `;
 
 export const Paragraph = styled.p`
     font-weight: 400;
     font-size: 20px;
-    line-height: 140%;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.colors.slateGray};
+    margin-top: 0;
+    margin-bottom: 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+        font-size: 18px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+        font-size: 16px;
+    }
 `;

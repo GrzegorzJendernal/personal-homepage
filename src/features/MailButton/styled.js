@@ -8,7 +8,7 @@ export const Button = styled.button`
     align-items: center;
     padding: 12px 16px;
     gap: 16px;
-    background: ${({ theme }) => theme.color.scienceBlue};
+    background: ${({ theme }) => theme.colors.scienceBlue};
     border: 1px solid rgba(209, 213, 218, 0.3);
     border-radius: 4px;
     width: 154px;
@@ -17,7 +17,7 @@ export const Button = styled.button`
 
 export const ButtonText = styled.span`
     height: 25px;
-    color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.colors.white};
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
