@@ -1,6 +1,6 @@
-import AboutMe from './AboutMe';
 import { Container } from './styled';
-import ThemeButton from './ThemeButton';
+import ThemeButton from '../ThemeButton';
+import AboutMe from '../../features/AboutMe';
 
 const Header = () => {
     return (
