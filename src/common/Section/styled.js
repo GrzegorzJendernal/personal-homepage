@@ -8,31 +8,72 @@ export const Container = styled.section`
     margin: 0 auto;
     background-color: ${({ theme }) => theme.colors.white};
     margin-top: 60px;
+    box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
+    border-radius: 4px;
 `;
 
 export const Header = styled.h2`
     font-weight: 900;
     font-size: 30px;
-    line-height: 36px;
     padding: 0px 16px 16px 32px;
     border-bottom: solid 1px ${({ theme }) => theme.colors.mercury};
     margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+        font-size: 26px;
+        padding: 0px 14px 14px 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+        font-size: 22px;
+        padding: 0px 12px 12px 26px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+        font-size: 18px;
+        padding: 0px 8px 8px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 `;
 
 export const List = styled.ul`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 0px;
-    gap: 115px;
     list-style: none;
+    margin: 0;
+    margin-bottom: 32px;
 `;
 
 export const ListItem = styled.li`
     font-weight: 400;
     font-size: 18px;
-    line-height: 140%;
     color: ${({ theme }) => theme.colors.slateGray};
+    flex-basis: 33.33%;
+    padding-bottom: 8px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+        font-size: 16px;
+        padding-bottom: 7px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+        font-size: 14px;
+        padding-bottom: 6px;
+        flex-basis: 50%;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        flex-basis: 100%;
+    }
 `;
 
 export const Point = styled(Ellipse)`
@@ -42,4 +83,11 @@ export const Point = styled(Ellipse)`
     background-color: ${({ theme }) => theme.colors.scienceBlue};
     margin-left: 32px;
     margin-right: 16px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width: 6px;
+        height: 6px;
+        margin-left: 30px;
+        margin-right: 8px;
+    }
 `;
