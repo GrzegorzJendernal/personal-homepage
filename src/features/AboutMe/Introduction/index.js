@@ -1,4 +1,4 @@
-import MailButton from "../../MailButton";
+import Button from "../../../common/Button";
 import { Box, Caption, Name, Paragraph } from "./styled";
 
 const Introduction = () => {
@@ -11,7 +11,9 @@ const Introduction = () => {
                 kjfndksjnfkj KJFNKJDndnf kjnfSNFKJLn kjsfnkSNFKSDNFkl
                 kjnfkDNFKndfkndkjfn kjnfkJNFKJDN KNFKdnknd KDJFNdkjnfkjDN KJFNKJ
             </Paragraph>
-            <MailButton />
+            <Button
+                text={"Hire Me"}
+            />
         </Box>
     );
 };
