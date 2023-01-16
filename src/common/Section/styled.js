@@ -7,9 +7,13 @@ export const Container = styled.section`
     grid-template-rows: 1fr auto;
     margin: 0 auto;
     background-color: ${({ theme }) => theme.colors.white};
-    margin-top: 60px;
+    margin-bottom: 60px;
     box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
     border-radius: 4px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        margin-bottom: 50px;
+    }
 `;
 
 export const Header = styled.h2`
