@@ -1,0 +1,37 @@
+import styled from "styled-components";
+import { ReactComponent as Cat } from "./Shape.svg";
+
+export const Container = styled.div`
+    text-align: center;
+`;
+
+export const Logo = styled(Cat)`
+    width: 40px;
+    height: auto;
+    color: ${({ theme }) => theme.colors.scienceBlue};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width: 32px;
+    }
+`;
+
+export const Title = styled.h2`
+    font-weight: 900;
+    font-size: 30px;
+    color: ${({ theme }) => theme.colors.blackText};
+    margin-top: 13px;
+    margin-bottom: 8px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+        font-size: 26px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+        font-size: 22px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+`;
