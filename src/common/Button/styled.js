@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Message } from "./Message.svg"
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,7 +11,7 @@ export const Button = styled.button`
     background: ${({ theme }) => theme.colors.scienceBlue};
     border: 1px solid rgba(209, 213, 218, 0.3);
     border-radius: 4px;
-    width: 154px;
+    max-width: 160px;
     height: 49px;
 `;
 
