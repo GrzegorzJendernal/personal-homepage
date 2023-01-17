@@ -36,5 +36,5 @@ export const Link = styled.a`
   display: flex;
   justify-content: center;
   text-decoration: none;
-  margin: 32px auto 140px;
+  margin: 32px auto 0;
 `;

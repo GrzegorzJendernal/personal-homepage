@@ -1,9 +1,9 @@
 import Header from "../common/Header";
 import Section from "../common/Section";
 import Wrapper from "../common/Wrapper";
-import Portfolio from "../features/Portfolio";
-import { mySkills } from "../features/sklills/mySkills";
-import { skillsToLearn } from "../features/sklills/skillToLearn";
+import Portfolio from "../features/homepage/Portfolio";
+import { mySkills } from "../features/homepage/sklills/mySkills";
+import { skillsToLearn } from "../features/homepage/sklills/skillToLearn";
 
 function App() {
   return (

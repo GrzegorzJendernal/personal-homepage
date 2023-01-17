@@ -1,4 +1,4 @@
-import Button from "../../../common/Button";
+import Button from "../../../../common/Button";
 import { Box, Caption, Name, Paragraph } from "./styled";
 
 const Introduction = () => {

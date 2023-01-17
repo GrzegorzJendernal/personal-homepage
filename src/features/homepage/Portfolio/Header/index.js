@@ -1,4 +1,4 @@
-import DescriptionText from "../../../common/DescriptionText";
+import DescriptionText from "../../../../common/DescriptionText";
 import { Container, Logo, Title } from "./styled";
 
 const Header = () => (
