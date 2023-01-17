@@ -5,7 +5,7 @@ import Portfolio from "../features/homepage/Portfolio";
 import { mySkills } from "../features/homepage/sklills/mySkills";
 import { skillsToLearn } from "../features/homepage/sklills/skillToLearn";
 
-function App() {
+const App = () => {
   return (
     <Wrapper>
       <Header />
