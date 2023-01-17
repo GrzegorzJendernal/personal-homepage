@@ -9,10 +9,19 @@ export const StyledButton = styled.button`
     padding: 12px 16px;
     gap: 16px;
     background: ${({ theme }) => theme.colors.scienceBlue};
-    border: 1px solid rgba(209, 213, 218, 0.3);
+    border: 1px solid ${({ theme }) => theme.colors.iron};
     border-radius: 4px;
     max-width: 160px;
     height: 49px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: ${({ theme }) => theme.boxShadow.buttonHover};
+    }
+
+    &:active {
+        box-shadow: ${({ theme }) => theme.boxShadow.buttonActive};
+    }
 `;
 
 export const ButtonText = styled.span`
