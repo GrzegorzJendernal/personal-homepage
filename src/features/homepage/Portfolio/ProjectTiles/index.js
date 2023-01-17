@@ -1,33 +1,34 @@
+import { useSelector } from "react-redux";
+import { selectRepos } from "../../homepageSlice";
 import { Container, Header, Link, Paragraph, Tile } from "./styled";
 
 const ProjectTiles = () => {
+    const repos = useSelector(selectRepos);
 
     return (
         <Container>
-            <Tile>
-                <Header>Tytuł</Header>
-                <Paragraph>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</Paragraph>
-                <Paragraph>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-                <Paragraph link>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-            </Tile>
-            <Tile>
-                <Header>Tytuł</Header>
-                <Paragraph>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</Paragraph>
-                <Paragraph>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-                <Paragraph link>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-            </Tile>
-            <Tile>
-                <Header>Tytuł</Header>
-                <Paragraph>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</Paragraph>
-                <Paragraph>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-                <Paragraph link>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-            </Tile>
-            <Tile>
-                <Header>Tytuł</Header>
-                <Paragraph>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</Paragraph>
-                <Paragraph>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-                <Paragraph link>Repo: <Link>www.adkjnajkdns.com</Link></Paragraph>
-            </Tile>
+            {repos.map((repo) => (<Tile>
+                <Header>{repo.name}</Header>
+                <Paragraph>{repo.description}</Paragraph>
+                <Paragraph>Demo:&nbsp;
+                    <Link
+                        href={repo.homepage}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub Pages
+                    </Link>
+                </Paragraph>
+                <Paragraph link>Code:&nbsp;
+                    <Link
+                        href={repo.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Repository
+                    </Link>
+                </Paragraph>
+            </Tile>))}
         </Container>
     );
 };
