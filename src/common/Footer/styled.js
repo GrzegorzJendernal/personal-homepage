@@ -7,7 +7,7 @@ export const Container = styled.div`
     max-width: 1186px;
     margin: 0 auto;
     margin-bottom: 110px;
-    color: ${({ theme }) => theme.colors.blackText};
+    color: ${({ theme }) => theme.colors.footerText};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
         gap: 50px;

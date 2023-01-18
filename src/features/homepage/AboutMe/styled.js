@@ -22,5 +22,4 @@ export const Photo = styled.img`
     height: auto;
     object-fit: contain;
     border-radius: 50%;
-    box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
     `;

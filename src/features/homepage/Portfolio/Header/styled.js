@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Cat } from "./github.svg";
+import { ReactComponent as Cat } from "../../images/github.svg";
 
 export const Container = styled.div`
     text-align: center;
@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Logo = styled(Cat)`
     width: 40px;
     height: auto;
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.portfolio.logo};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width: 32px;
@@ -18,7 +18,7 @@ export const Logo = styled(Cat)`
 export const Title = styled.h2`
     font-weight: 900;
     font-size: 30px;
-    color: ${({ theme }) => theme.colors.blackText};
+    color: ${({ theme }) => theme.colors.portfolio.title};
     margin-top: 13px;
     margin-bottom: 8px;
 

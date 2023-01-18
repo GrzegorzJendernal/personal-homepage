@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.article`
+export const Container = styled.div`
     display: grid;
     grid-template-rows: auto auto auto;
     gap: 24px;
@@ -9,7 +9,7 @@ export const Container = styled.article`
 export const Invitation = styled.span`
     font-weight: 700;
     font-size: 12px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.contact.invitation};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
         font-size: 10px;
@@ -20,10 +20,15 @@ export const Invitation = styled.span`
     }
 `;
 
-export const Mail = styled.h2`
+export const Mail = styled.a`
     font-weight: 900;
     font-size: 32px;
-    margin: 0;
+    color: ${({ theme }) => theme.colors.contact.email};
+    text-decoration: none;
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.contact.emailHover};
+    }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 28px;
@@ -41,7 +46,7 @@ export const Mail = styled.h2`
 export const Paragraph = styled.p`
     font-weight: 400;
     font-size: 18px;
-    color: ${({ theme }) => theme.colors.slateGray};
+
     margin: 0;
     max-width: 55%;
 

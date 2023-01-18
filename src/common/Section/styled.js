@@ -6,7 +6,7 @@ export const Container = styled.section`
     display: grid;
     grid-template-rows: 1fr auto;
     margin: 0 auto;
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.section.background};
     margin-bottom: 60px;
     box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
     border-radius: 4px;
@@ -20,9 +20,10 @@ export const Header = styled.h2`
     font-weight: 900;
     font-size: 30px;
     padding: 0px 16px 16px 32px;
-    border-bottom: solid 1px ${({ theme }) => theme.colors.mercury};
+    border-bottom: solid 1px ${({ theme }) => theme.colors.section.divider};
     margin-top: 32px;
     margin-bottom: 32px;
+    color: ${({ theme }) => theme.colors.section.header};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 26px;
@@ -60,7 +61,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
     font-weight: 400;
     font-size: 18px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.section.text};
     flex-basis: 33.33%;
     padding-bottom: 8px;
 
@@ -84,7 +85,7 @@ export const Point = styled(Ellipse)`
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.section.point};
     margin-left: 32px;
     margin-right: 16px;
 

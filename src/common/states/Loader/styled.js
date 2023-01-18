@@ -16,7 +16,7 @@ export const Spinner = styled(spinner)`
   width: 160px;
   height: auto;
   margin-top: 48px;
-  color: ${({ theme }) => theme.colors.scienceBlue};
+  color: ${({ theme }) => theme.colors.loader};
   animation: ${rotation} 1.5s linear infinite;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {

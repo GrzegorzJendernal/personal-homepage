@@ -4,7 +4,7 @@ import { ReactComponent as Danger } from "./Danger.svg";
 export const ErrorBox = styled.div`
   text-align: center;
   margin-top: 95px;
-  color: ${({ theme }) => theme.colors.blackText};
+  color: ${({ theme }) => theme.colors.errorPage};
 `;
 
 export const Sign = styled(Danger)`

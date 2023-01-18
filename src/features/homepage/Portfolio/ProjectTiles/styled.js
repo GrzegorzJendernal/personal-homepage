@@ -17,13 +17,13 @@ export const Tile = styled.article`
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.portfolio.tileBackground};
     box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
-    border: 6px solid ${({ theme }) => theme.colors.iron};
+    border: 6px solid ${({ theme }) => theme.colors.portfolio.border};
     border-radius: 4px;
 
     &:hover {
-        border: 6px solid ${({ theme }) => theme.colors.anakiwa};
+        border: 6px solid ${({ theme }) => theme.colors.portfolio.borderHover};
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
@@ -34,7 +34,7 @@ export const Tile = styled.article`
 export const Header = styled.h3`
     font-weight: 700;
     font-size: 24px;
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.portfolio.repoName};
     margin: 0;
 `;
 
@@ -45,7 +45,7 @@ export const Paragraph = styled.p`
     font-size: 18px;
     align-items: center;
     text-align: justify;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.portfolio.text};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 16px;
@@ -57,11 +57,11 @@ export const Paragraph = styled.p`
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.portfolio.link};
     text-decoration: none;
 
     &:hover {
-        color: ${({ theme }) => theme.colors.blue};
-        border-bottom: 1px solid ${({ theme }) => theme.colors.blue};
+        color: ${({ theme }) => theme.colors.portfolio};
+        border-bottom: 1px solid ${({ theme }) => theme.colors.portfolio.linkHover};
     }
 `;

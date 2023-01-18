@@ -1,5 +1,5 @@
 import { call, delay, put, takeLatest } from "redux-saga/effects";
-import { getRepos } from "./getRepos";
+import { getRepos } from "../../core/getRepos";
 import { fetchRepos, fetchReposError, fetchReposSucces } from "./homepageSlice";
 
 function* fetchReposHandler() {

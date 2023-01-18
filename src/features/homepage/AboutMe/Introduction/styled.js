@@ -8,7 +8,7 @@ export const Box = styled.div`
 export const Caption = styled.span`
     font-weight: 700;
     font-size: 12px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.header.caption};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
         font-size: 10px;
@@ -22,7 +22,7 @@ export const Caption = styled.span`
 export const Name = styled.h1`
     font-weight: 900;
     font-size: 38px;
-    color: ${({ theme }) => theme.colors.blackText};
+    color: ${({ theme }) => theme.colors.header.name};
     margin-top: 12px;
     margin-bottom: 35px;
 
@@ -48,7 +48,7 @@ export const Name = styled.h1`
 export const Paragraph = styled.p`
     font-weight: 400;
     font-size: 20px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.header.text};
     margin-top: 0;
     margin-bottom: 32px;
 
@@ -59,4 +59,8 @@ export const Paragraph = styled.p`
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
         font-size: 16px;
     }
+`;
+
+export const Link = styled.a`
+    text-decoration: none;
 `;

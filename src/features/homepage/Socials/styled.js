@@ -16,10 +16,10 @@ export const LinkBox = styled.div`
 `;
 
 export const SocialLink = styled.a`
-    color: ${({ theme }) => theme.colors.blackText};
+    color: ${({ theme }) => theme.colors.socials.link};
 
     &:hover {
-        color: ${({ theme }) => theme.colors.scienceBlue};
+        color: ${({ theme }) => theme.colors.socials.hover};
     }
 `;
 

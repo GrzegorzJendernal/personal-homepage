@@ -1,6 +1,6 @@
-import { ReactComponent as gh } from "./github.svg";
-import { ReactComponent as fb } from "./Facebook.svg";
-import { ReactComponent as lin } from "./LinkedIN.svg";
+import { ReactComponent as gh } from "../images/github.svg";
+import { ReactComponent as fb } from "../images/Facebook.svg";
+import { ReactComponent as lin } from "../images/LinkedIN.svg";
 import { styledIcon } from "./styled";
 
 export const socialsList = [

@@ -4,6 +4,7 @@ import { ReactComponent as Sun } from "./sun.svg";
 export const Sunny = styled(Sun)`
     width: 14px;
     height: 14px;
+    color: ${({ theme }) => theme.colors.themeButton.sun};
 `;
 
 export const Circle = styled.div`
@@ -14,7 +15,7 @@ export const Circle = styled.div`
     height: 20px;
     padding: 3px;
     border-radius: 50%;
-    background-color: ${({ theme }) => theme.colors.slateGray};
+    background-color: ${({ theme }) => theme.colors.themeButton.circleBackground};
 `;
 
 export const Button = styled.button`
@@ -22,13 +23,13 @@ export const Button = styled.button`
     align-content: center;
     width: 48px;
     height: 26px;
-    border: solid 1px ${({ theme }) => theme.colors.slateGray};
+    border: solid 1px ${({ theme }) => theme.colors.themeButton.border};
     border-radius: 13px;
     padding: 3px;
 `;
 
 export const Container = styled.div`
-    max-width: 154px;
+    max-width: 159px;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -42,7 +43,7 @@ export const Container = styled.div`
 export const Text = styled.span`
     font-weight: 700;
     font-size: 12px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.themeButton.text};
     margin-right: 12px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
