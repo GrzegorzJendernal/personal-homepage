@@ -4,63 +4,17 @@ const colorNames = {
     mercury: "#E5E5E5",
     iron: "rgba(209, 213, 218, 0.3)",
     slateGray: "#6E7E91",
+    shipCove: "#6D93BE",
     anakiwa: "#8CC2FF",
+    dodgerBlue: "#2188FF",
     scienceBlue: "#0366D6",
     blue: "#2517EB",
-    mineShaft: "#363636",
+    parsley: "rgba(20, 70, 32, 0.2)",
+    mineShaft: "rgb(54, 54, 54)",
     blackText: "#252525",
-}
+};
 
-export const theme = {
-    colors: {
-        background: colorNames.whiteLilac,
-        button: {
-            background: colorNames.scienceBlue,
-            border: colorNames.iron,
-            text: colorNames.white,
-        },
-        footerText: colorNames.blackText,
-        section: {
-            header: colorNames.blackText,
-            background: colorNames.white,
-            divider: colorNames.mercury,
-            text: colorNames.slateGray,
-            point: colorNames.scienceBlue,
-        },
-        errorPage: colorNames.blackText,
-        loader: colorNames.scienceBlue,
-        themeButton: {
-            sun: colorNames.white,
-            circleBackground: colorNames.slateGray,
-            border: colorNames.slateGray,
-            text: colorNames.slateGray,
-        },
-        header: {
-            caption: colorNames.slateGray,
-            name: colorNames.blackText,
-            text: colorNames.slateGray,
-        },
-        contact: {
-            invitation: colorNames.slateGray,
-            email: colorNames.blackText,
-            emailHover: colorNames.scienceBlue,
-        },
-        portfolio: {
-            logo: colorNames.scienceBlue,
-            title: colorNames.blackText,
-            tileBackground: colorNames.white,
-            border: colorNames.iron,
-            borderHover: colorNames.anakiwa,
-            repoName: colorNames.scienceBlue,
-            text: colorNames.slateGray,
-            link: colorNames.scienceBlue,
-            linkHover: colorNames.blue,
-        },
-        socials: {
-            link: colorNames.blackText,
-            hover: colorNames.scienceBlue,
-        },
-    },
+const common = {
     breakpoints: {
         tiny: "467px",
         small: "524px",
@@ -71,7 +25,115 @@ export const theme = {
     },
     boxShadow: {
         boxShadow: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);",
-        buttonHover: "2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;",
-        buttonActive: "inset 0px 2px 0px rgba(20, 70, 32, 0.2)",
     }
+};
+
+export const theme = {
+    ...common,
+    colors: {
+        background: colorNames.whiteLilac,
+        button: {
+            active: colorNames.parsley,
+            background: colorNames.scienceBlue,
+            border: colorNames.iron,
+            hover: colorNames.anakiwa,
+            text: colorNames.white,
+        },
+        contact: {
+            email: colorNames.blackText,
+            emailHover: colorNames.scienceBlue,
+            invitation: colorNames.slateGray,
+        },
+        errorPage: colorNames.blackText,
+        footerText: colorNames.blackText,
+        header: {
+            caption: colorNames.slateGray,
+            name: colorNames.blackText,
+            text: colorNames.slateGray,
+        },
+        loader: colorNames.scienceBlue,
+        portfolio: {
+            border: colorNames.iron,
+            borderHover: colorNames.anakiwa,
+            link: colorNames.scienceBlue,
+            linkHover: colorNames.blue,
+            logo: colorNames.scienceBlue,
+            repoName: colorNames.scienceBlue,
+            text: colorNames.slateGray,
+            title: colorNames.blackText,
+            tileBackground: colorNames.white,
+        },
+        section: {
+            background: colorNames.white,
+            divider: colorNames.mercury,
+            header: colorNames.blackText,
+            point: colorNames.scienceBlue,
+            text: colorNames.slateGray,
+        },
+        socials: {
+            link: colorNames.blackText,
+            hover: colorNames.scienceBlue,
+        },
+        themeButton: {
+            border: colorNames.slateGray,
+            circleBackground: colorNames.slateGray,
+            sun: colorNames.white,
+            text: colorNames.slateGray,
+        },
+    },
+};
+
+export const themeDark = {
+    ...common,
+    colors: {
+        background: colorNames.blackText,
+        button: {
+            active: colorNames.parsley,
+            background: colorNames.dodgerBlue,
+            border: colorNames.iron,
+            hover: colorNames.shipCove,
+            text: colorNames.white,
+        },
+        contact: {
+            email: colorNames.white,
+            emailHover: colorNames.dodgerBlue,
+            invitation: colorNames.white,
+        },
+        errorPage: colorNames.white,
+        footerText: colorNames.white,
+        header: {
+            caption: colorNames.white,
+            name: colorNames.white,
+            text: colorNames.white,
+        },
+        loader: colorNames.dodgerBlue,
+        portfolio: {
+            border: colorNames.iron,
+            borderHover: colorNames.scienceBlue,
+            link: colorNames.blue,
+            linkHover: colorNames.dodgerBlue,
+            logo: colorNames.dodgerBlue,
+            repoName: colorNames.white,
+            text: colorNames.white,
+            title: colorNames.white,
+            tileBackground: colorNames.mineShaft,
+        },
+        section: {
+            background: colorNames.mineShaft,
+            divider: colorNames.white,
+            header: colorNames.white,
+            point: colorNames.dodgerBlue,
+            text: colorNames.white,
+        },
+        socials: {
+            link: colorNames.white,
+            hover: colorNames.dodgerBlue,
+        },
+        themeButton: {
+            border: colorNames.white,
+            circleBackground: colorNames.white,
+            sun: colorNames.blackText,
+            text: colorNames.white,
+        },
+    },
 };
