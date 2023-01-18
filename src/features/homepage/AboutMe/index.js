@@ -1,5 +1,5 @@
 import { Box, Photo } from "./styled";
-import facjata from "./gjend.png";
+import facjata from "../images/gjend.png";
 import Introduction from "./Introduction";
 
 const AboutMe = () => {
