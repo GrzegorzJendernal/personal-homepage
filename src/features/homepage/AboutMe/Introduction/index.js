@@ -1,5 +1,5 @@
 import Button from "../../../../common/Button";
-import { Box, Caption, Name, Paragraph } from "./styled";
+import { Box, Caption, Link, Name, Paragraph } from "./styled";
 
 const Introduction = () => {
 
@@ -11,9 +11,13 @@ const Introduction = () => {
                 kjfndksjnfkj KJFNKJDndnf kjnfSNFKJLn kjsfnkSNFKSDNFkl
                 kjnfkDNFKndfkndkjfn kjnfkJNFKJDN KNFKdnknd KDJFNdkjnfkjDN KJFNKJ
             </Paragraph>
-            <Button
-                text={"Hire Me"}
-            />
+            <Link
+                href="mailto:g.jendernal@gmail.com"
+            >
+                <Button
+                    text={"Hire Me"}
+                />
+            </Link>
         </Box>
     );
 };
