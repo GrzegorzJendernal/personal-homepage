@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Cat } from "./Shape.svg";
+import { ReactComponent as Cat } from "./github.svg";
 
 export const Container = styled.div`
     text-align: center;

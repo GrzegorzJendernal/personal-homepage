@@ -7,28 +7,31 @@ const ProjectTiles = () => {
 
     return (
         <Container>
-            {repos.map((repo) => (<Tile>
-                <Header>{repo.name}</Header>
-                <Paragraph>{repo.description}</Paragraph>
-                <Paragraph>Demo:&nbsp;
-                    <Link
-                        href={repo.homepage}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub Pages
-                    </Link>
-                </Paragraph>
-                <Paragraph link>Code:&nbsp;
-                    <Link
-                        href={repo.html_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Repository
-                    </Link>
-                </Paragraph>
-            </Tile>))}
+            {repos.map((repo) => (
+                <Tile
+                    key={repo.id}
+                >
+                    <Header>{repo.name}</Header>
+                    <Paragraph>{repo.description}</Paragraph>
+                    <Paragraph>Demo:&nbsp;
+                        <Link
+                            href={repo.homepage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub Pages
+                        </Link>
+                    </Paragraph>
+                    <Paragraph link>Code:&nbsp;
+                        <Link
+                            href={repo.html_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Repository
+                        </Link>
+                    </Paragraph>
+                </Tile>))}
         </Container>
     );
 };

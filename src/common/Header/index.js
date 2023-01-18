@@ -1,11 +1,10 @@
 import { Container } from './styled';
 import ThemeButton from '../ThemeButton';
-import AboutMe from '../../features/homepage/AboutMe';
 
-const Header = () => {
+const Header = ({ content }) => {
     return (
         <Container>
-            <AboutMe />
+            {content}
             <ThemeButton />
         </Container>
     )

@@ -10,7 +10,6 @@ import { Wrapper } from "./styled";
 const Portfolio = () => {
     const dispatch = useDispatch();
     const status = useSelector(selectStatus);
-    console.log(status);
 
     useEffect(() => {
         dispatch(fetchRepos());

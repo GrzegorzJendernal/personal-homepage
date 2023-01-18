@@ -38,8 +38,8 @@ export const Header = styled.h2`
         margin-bottom: 26px;
     }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-        font-size: 18px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: 16px;
         padding: 0px 8px 8px 20px;
         margin-top: 20px;
         margin-bottom: 20px;
