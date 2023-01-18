@@ -16,11 +16,11 @@ export const StyledButton = styled.button`
     cursor: pointer;
 
     &:hover {
-        box-shadow: ${({ theme }) => theme.boxShadow.buttonHover};
+        box-shadow: 2px -2px 0px ${({ theme }) => theme.colors.button.hover}, -2px 2px 0px ${({ theme }) => theme.colors.button.hover}, 2px 2px 0px ${({ theme }) => theme.colors.button.hover}, -2px -2px 0px ${({ theme }) => theme.colors.button.hover};
     }
 
     &:active {
-        box-shadow: ${({ theme }) => theme.boxShadow.buttonActive};
+        box-shadow: inset 0px 2px 0px ${({ theme }) => theme.colors.button.active};
     }
 `;
 
