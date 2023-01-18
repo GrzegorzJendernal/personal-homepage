@@ -8,8 +8,8 @@ export const StyledButton = styled.button`
     align-items: center;
     padding: 12px 16px;
     gap: 16px;
-    background: ${({ theme }) => theme.colors.scienceBlue};
-    border: 1px solid ${({ theme }) => theme.colors.iron};
+    background: ${({ theme }) => theme.colors.button.background};
+    border: 1px solid ${({ theme }) => theme.colors.button.border};
     border-radius: 4px;
     max-width: 160px;
     height: 49px;
@@ -26,7 +26,7 @@ export const StyledButton = styled.button`
 
 export const ButtonText = styled.span`
     height: 25px;
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.button.text};
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
