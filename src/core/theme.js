@@ -6,11 +6,14 @@ const colorNames = {
     slateGray: "#6E7E91",
     shipCove: "#6D93BE",
     anakiwa: "#8CC2FF",
-    dodgerBlue: "#2188FF",
-    scienceBlue: "#0366D6",
+    dodgerBlue: "#2188ff",
+    scienceBlue: "rgba(3, 102, 214, 0.2)",
     blue: "#2517EB",
+    darkBlue: "rgba(33, 136, 255, 0.4)",
+    murkyBlue: "rgba(3, 102, 214, 0.2)",
     parsley: "rgba(20, 70, 32, 0.2)",
     mineShaft: "rgb(54, 54, 54)",
+    semiDark: "rgba(54, 54, 54, 0.72)",
     blackText: "#252525",
 };
 
@@ -44,6 +47,7 @@ export const theme = {
             emailHover: colorNames.scienceBlue,
             invitation: colorNames.slateGray,
         },
+        descriptionText: colorNames.blackText,
         errorPage: colorNames.blackText,
         footerText: colorNames.blackText,
         header: {
@@ -56,7 +60,7 @@ export const theme = {
             border: colorNames.iron,
             borderHover: colorNames.anakiwa,
             link: colorNames.scienceBlue,
-            linkHover: colorNames.blue,
+            linkUnderline: colorNames.murkyBlue,
             logo: colorNames.scienceBlue,
             repoName: colorNames.scienceBlue,
             text: colorNames.slateGray,
@@ -75,6 +79,7 @@ export const theme = {
             hover: colorNames.scienceBlue,
         },
         themeButton: {
+            background: colorNames.mercury,
             border: colorNames.slateGray,
             circleBackground: colorNames.slateGray,
             sun: colorNames.white,
@@ -99,6 +104,7 @@ export const themeDark = {
             emailHover: colorNames.dodgerBlue,
             invitation: colorNames.white,
         },
+        descriptionText: colorNames.white,
         errorPage: colorNames.white,
         footerText: colorNames.white,
         header: {
@@ -110,13 +116,13 @@ export const themeDark = {
         portfolio: {
             border: colorNames.iron,
             borderHover: colorNames.scienceBlue,
-            link: colorNames.blue,
-            linkHover: colorNames.dodgerBlue,
+            link: colorNames.dodgerBlue,
+            linkUnderline: colorNames.darkBlue,
             logo: colorNames.dodgerBlue,
             repoName: colorNames.white,
             text: colorNames.white,
             title: colorNames.white,
-            tileBackground: colorNames.mineShaft,
+            tileBackground: colorNames.semiDark,
         },
         section: {
             background: colorNames.mineShaft,
@@ -130,6 +136,7 @@ export const themeDark = {
             hover: colorNames.dodgerBlue,
         },
         themeButton: {
+            background: colorNames.semiDark,
             border: colorNames.white,
             circleBackground: colorNames.white,
             sun: colorNames.blackText,

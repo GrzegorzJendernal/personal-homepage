@@ -26,6 +26,8 @@ export const Button = styled.button`
     border: solid 1px ${({ theme }) => theme.colors.themeButton.border};
     border-radius: 13px;
     padding: 3px;
+    background-color: ${({ theme }) => theme.colors.themeButton.background};
+    box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
 `;
 
 export const Container = styled.div`

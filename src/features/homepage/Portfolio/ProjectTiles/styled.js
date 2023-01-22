@@ -59,9 +59,10 @@ export const Paragraph = styled.p`
 export const Link = styled.a`
     color: ${({ theme }) => theme.colors.portfolio.link};
     text-decoration: none;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.portfolio.linkUnderline};
 
     &:hover {
         color: ${({ theme }) => theme.colors.portfolio};
-        border-bottom: 1px solid ${({ theme }) => theme.colors.portfolio.linkHover};
+        border-bottom: 1px solid ${({ theme }) => theme.colors.portfolio.link};
     }
 `;

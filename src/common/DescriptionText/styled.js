@@ -6,6 +6,8 @@ export const Description = styled.p`
     margin: 0;
     white-space: pre-wrap;
     line-height: 140%;
+    color: ${({ theme }) => theme.colors.descriptionText};
+
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 19px;
