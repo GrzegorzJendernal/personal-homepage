@@ -1,10 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getThemeFromLocalStorage } from "./themeLocalStorage";
 
 const homepageSlice = createSlice({
     name: "homepage",
     initialState: {
         repos: [],
         status: "loading",
+        theme: getThemeFromLocalStorage(),
     },
     reducers: {
         fetchRepos: (state) => {
@@ -17,6 +19,12 @@ const homepageSlice = createSlice({
         fetchReposError: (state) => {
             state.status = "error";
         },
+        switchThemeToDark: (state) => {
+            state.theme = "dark";
+        },
+        switchThemeToLight: (state) => {
+            state.theme = "light";
+        },
     },
 });
 
@@ -24,11 +32,14 @@ export const {
     fetchRepos,
     fetchReposSucces,
     fetchReposError,
+    switchThemeToDark,
+    switchThemeToLight,
 } = homepageSlice.actions;
 
 const selectHomepageState = (state) => state.homepage;
 
 export const selectStatus = (state) => selectHomepageState(state).status;
 export const selectRepos = (state) => selectHomepageState(state).repos;
+export const selectTheme = (state) => selectHomepageState(state).theme;
 
 export default homepageSlice.reducer;

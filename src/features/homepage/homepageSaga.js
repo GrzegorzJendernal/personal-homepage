@@ -1,6 +1,19 @@
-import { call, delay, put, takeLatest } from "redux-saga/effects";
+import {
+    call,
+    delay,
+    put,
+    select,
+    takeEvery,
+    takeLatest
+} from "redux-saga/effects";
 import { getRepos } from "../../core/getRepos";
-import { fetchRepos, fetchReposError, fetchReposSucces } from "./homepageSlice";
+import {
+    fetchRepos,
+    fetchReposError,
+    fetchReposSucces,
+    selectTheme
+} from "./homepageSlice";
+import { saveThemeInLocalStorage } from "./themeLocalStorage";
 
 function* fetchReposHandler() {
     try {
@@ -12,6 +25,12 @@ function* fetchReposHandler() {
     }
 };
 
+function* saveThemeInLocalStorageHandler() {
+    const theme = yield select(selectTheme);
+    yield call(saveThemeInLocalStorage, theme);
+};
+
 export function* homepageSaga() {
     yield takeLatest(fetchRepos.type, fetchReposHandler);
+    yield takeEvery("*", saveThemeInLocalStorageHandler);
 };
