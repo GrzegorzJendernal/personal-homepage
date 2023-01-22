@@ -7,7 +7,7 @@ const colorNames = {
     shipCove: "#6D93BE",
     anakiwa: "#8CC2FF",
     dodgerBlue: "#2188ff",
-    scienceBlue: "rgba(3, 102, 214, 0.2)",
+    scienceBlue: "#0366d6",
     blue: "#2517EB",
     darkBlue: "rgba(33, 136, 255, 0.4)",
     murkyBlue: "rgba(3, 102, 214, 0.2)",
