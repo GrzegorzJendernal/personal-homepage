@@ -10,6 +10,7 @@ export const Invitation = styled.span`
     font-weight: 700;
     font-size: 12px;
     color: ${({ theme }) => theme.colors.contact.invitation};
+    transition: 0.4s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
         font-size: 10px;
@@ -25,6 +26,7 @@ export const Mail = styled.a`
     font-size: 32px;
     color: ${({ theme }) => theme.colors.contact.email};
     text-decoration: none;
+    transition: 0.4s;
 
     &:hover {
         color: ${({ theme }) => theme.colors.contact.emailHover};

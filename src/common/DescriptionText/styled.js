@@ -7,6 +7,7 @@ export const Description = styled.p`
     white-space: pre-wrap;
     line-height: 140%;
     color: ${({ theme }) => theme.colors.descriptionText};
+    transition: 0.4s;
 
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {

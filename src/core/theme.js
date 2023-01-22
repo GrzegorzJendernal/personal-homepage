@@ -31,7 +31,7 @@ const common = {
     }
 };
 
-export const theme = {
+export const themeLight = {
     ...common,
     colors: {
         background: colorNames.whiteLilac,

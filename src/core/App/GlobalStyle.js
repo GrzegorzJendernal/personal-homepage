@@ -15,5 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
     word-break: break-word;
+    transition: 0.4s;
   }
 `;

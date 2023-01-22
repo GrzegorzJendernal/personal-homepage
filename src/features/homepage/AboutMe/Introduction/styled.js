@@ -9,6 +9,7 @@ export const Caption = styled.span`
     font-weight: 700;
     font-size: 12px;
     color: ${({ theme }) => theme.colors.header.caption};
+    transition: 0.4s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
         font-size: 10px;
@@ -25,6 +26,7 @@ export const Name = styled.h1`
     color: ${({ theme }) => theme.colors.header.name};
     margin-top: 12px;
     margin-bottom: 35px;
+    transition: 0.4s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 32px;
@@ -51,6 +53,7 @@ export const Paragraph = styled.p`
     color: ${({ theme }) => theme.colors.header.text};
     margin-top: 0;
     margin-bottom: 32px;
+    transition: 0.4s;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 18px;
