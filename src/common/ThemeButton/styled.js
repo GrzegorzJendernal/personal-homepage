@@ -17,7 +17,7 @@ export const Circle = styled.div`
     border-radius: 50%;
     background-color: ${({ theme }) => theme.colors.themeButton.circleBackground};
     transform: translateX(${({ dark }) => dark ? "20px" : "0px"});
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 `;
 
 export const Button = styled.button`
@@ -31,7 +31,7 @@ export const Button = styled.button`
     background-color: ${({ theme }) => theme.colors.themeButton.background};
     box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
     cursor: pointer;
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 `;
 
 export const Container = styled.div`

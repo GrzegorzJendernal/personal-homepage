@@ -5,7 +5,7 @@ export const ErrorBox = styled.div`
   text-align: center;
   margin-top: 95px;
   color: ${({ theme }) => theme.colors.errorPage};
-  transition: 0.4s;
+  transition: ${({ theme }) => theme.transition.time};
 `;
 
 export const Sign = styled(Danger)`

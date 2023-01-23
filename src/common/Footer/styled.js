@@ -8,7 +8,7 @@ export const Container = styled.div`
     margin: 0 auto;
     margin-bottom: 110px;
     color: ${({ theme }) => theme.colors.footerText};
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
         gap: 50px;

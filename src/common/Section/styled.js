@@ -10,7 +10,7 @@ export const Container = styled.section`
     margin-bottom: 60px;
     box-shadow: ${({ theme }) => theme.boxShadow.boxShadow};
     border-radius: 4px;
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         margin-bottom: 50px;
@@ -25,7 +25,7 @@ export const Header = styled.h2`
     margin-top: 32px;
     margin-bottom: 32px;
     color: ${({ theme }) => theme.colors.section.header};
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 26px;
@@ -66,7 +66,7 @@ export const ListItem = styled.li`
     color: ${({ theme }) => theme.colors.section.text};
     flex-basis: 33.33%;
     padding-bottom: 8px;
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 16px;
@@ -91,7 +91,7 @@ export const Point = styled(Ellipse)`
     color: ${({ theme }) => theme.colors.section.point};
     margin-left: 32px;
     margin-right: 16px;
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width: 6px;

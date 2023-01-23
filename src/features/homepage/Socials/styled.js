@@ -17,7 +17,7 @@ export const LinkBox = styled.div`
 
 export const SocialLink = styled.a`
     color: ${({ theme }) => theme.colors.socials.link};
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     &:hover {
         color: ${({ theme }) => theme.colors.socials.hover};

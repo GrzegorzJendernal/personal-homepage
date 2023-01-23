@@ -9,7 +9,7 @@ export const Logo = styled(Cat)`
     width: 40px;
     height: auto;
     color: ${({ theme }) => theme.colors.portfolio.logo};
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width: 32px;
@@ -22,7 +22,7 @@ export const Title = styled.h2`
     color: ${({ theme }) => theme.colors.portfolio.title};
     margin-top: 13px;
     margin-bottom: 8px;
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
         font-size: 26px;

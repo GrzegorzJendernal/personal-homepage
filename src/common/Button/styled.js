@@ -14,7 +14,7 @@ export const StyledButton = styled.button`
     max-width: 160px;
     height: 49px;
     cursor: pointer;
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 
     &:hover {
         box-shadow: 2px -2px 0px ${({ theme }) => theme.colors.button.hover}, -2px 2px 0px ${({ theme }) => theme.colors.button.hover}, 2px 2px 0px ${({ theme }) => theme.colors.button.hover}, -2px -2px 0px ${({ theme }) => theme.colors.button.hover};
@@ -35,7 +35,7 @@ export const ButtonText = styled.span`
     align-items: center;
     text-align: center;
     gap: 18px;
-    transition: 0.4s;
+    transition: ${({ theme }) => theme.transition.time};
 `;
 
 export const Letter = styled(Message)`
