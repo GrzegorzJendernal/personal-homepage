@@ -3,7 +3,6 @@ import { ThemeProvider } from 'styled-components';
 import Footer from "../../common/Footer";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
-import Wrapper from "../../common/Wrapper";
 import AboutMe from "../../features/homepage/AboutMe";
 import Contact from "../../features/homepage/Contact";
 import { selectTheme } from '../../features/homepage/homepageSlice';
@@ -18,9 +17,9 @@ import { themeLight, themeDark } from "../theme";
 const App = () => {
   const themeName = useSelector(selectTheme);
   const theme = () => {
-    if (themeName === "light") return (
-      themeLight
-    ); else return (themeDark)
+    if (themeName === "dark") return (
+      themeDark
+    ); return (themeLight)
 
   };
 
@@ -29,22 +28,21 @@ const App = () => {
       theme={theme()}
     >
       <GlobalStyle />
-      <Wrapper>
-        <Header
-          content={<AboutMe />}
-        />
-        <Section
-          title={"My skillset includes 🛠️"}
-          array={mySkills} />
-        <Section
-          title={"What I want to learn next 🚀"}
-          array={skillsToLearn} />
-        <Portfolio />
-        <Footer
-          content={<Contact />}
-          extraContent={<Socials />}
-        />
-      </Wrapper>
+      <Header
+        content={<AboutMe />}
+      />
+      <Section
+        title={"My skillset includes 🛠️"}
+        array={mySkills}
+      />
+      <Section
+        title={"What I want to learn next 🚀"}
+        array={skillsToLearn} />
+      <Portfolio />
+      <Footer
+        content={<Contact />}
+        extraContent={<Socials />}
+      />
     </ThemeProvider>
   );
 }
