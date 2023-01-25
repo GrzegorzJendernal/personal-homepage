@@ -4,8 +4,8 @@ import { getThemeFromLocalStorage } from "./themeLocalStorage";
 const homepageSlice = createSlice({
     name: "homepage",
     initialState: {
-        repos: [],
-        status: "loading",
+        repos: null,
+        status: "initial",
         theme: getThemeFromLocalStorage(),
     },
     reducers: {
