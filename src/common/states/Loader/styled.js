@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { ReactComponent as spinner } from "./icon-spinner.svg";
+import { ReactComponent as spinner } from "./iconSpinner.svg";
 
 export const SpinnerBox = styled.div`
   text-align: center;

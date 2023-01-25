@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Message } from "./Message.svg"
+import { ReactComponent as Message } from "./message.svg"
 
 export const StyledButton = styled.button`
     display: flex;
