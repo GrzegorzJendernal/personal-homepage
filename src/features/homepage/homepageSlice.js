@@ -12,8 +12,8 @@ const homepageSlice = createSlice({
         fetchRepos: (state) => {
             state.status = "loading";
         },
-        fetchReposSucces: (state, { payload: repos }) => {
-            state.status = "succes";
+        fetchReposSuccess: (state, { payload: repos }) => {
+            state.status = "success";
             state.repos = repos;
         },
         fetchReposError: (state) => {
@@ -30,7 +30,7 @@ const homepageSlice = createSlice({
 
 export const {
     fetchRepos,
-    fetchReposSucces,
+    fetchReposSuccess,
     fetchReposError,
     switchThemeToDark,
     switchThemeToLight,

@@ -41,22 +41,21 @@ export const Header = styled.h3`
 `;
 
 export const Paragraph = styled.p`
-    margin: 0;
-    margin-top: ${({ link }) => link ? "8px" : "24px"};
-    font-weight: 400;
-    font-size: 18px;
-    align-items: center;
-    text-align: justify;
-    color: ${({ theme }) => theme.colors.portfolio.text};
-    transition: ${({ theme }) => theme.transition.time};
+  margin: ${({link}) => link ? "8px" : "24px"} 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  align-items: center;
+  text-align: justify;
+  color: ${({theme}) => theme.colors.portfolio.text};
+  transition: ${({theme}) => theme.transition.time};
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
-        font-size: 16px;
-    }
+  @media (max-width: ${({theme}) => theme.breakpoints.large}) {
+    font-size: 16px;
+  }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-        font-size: 14px;
-    }
+  @media (max-width: ${({theme}) => theme.breakpoints.medium}) {
+    font-size: 14px;
+  }
 `;
 
 export const Link = styled.a`

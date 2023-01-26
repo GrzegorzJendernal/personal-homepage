@@ -20,7 +20,7 @@ const Portfolio = () => {
             <Header />
             {{
                 loading: <Loader />,
-                succes: <ProjectTiles />,
+                success: <ProjectTiles />,
                 error: <ErrorPage />,
             }[status]}
         </Wrapper>

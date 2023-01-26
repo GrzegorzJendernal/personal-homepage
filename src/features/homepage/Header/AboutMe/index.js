@@ -8,7 +8,7 @@ const AboutMe = () => {
         <Box>
             <Photo
                 src={facjata}
-                alt="portret"
+                alt={"portrait"}
             />
             <Introduction />
         </Box>

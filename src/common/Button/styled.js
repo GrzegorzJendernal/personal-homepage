@@ -21,7 +21,7 @@ export const StyledButton = styled.button`
     }
 
     &:active {
-        box-shadow: inset 0px 2px 0px ${({ theme }) => theme.colors.button.active};
+        box-shadow: inset 0 2px 0 ${({ theme }) => theme.colors.button.active};
     }
 `;
 

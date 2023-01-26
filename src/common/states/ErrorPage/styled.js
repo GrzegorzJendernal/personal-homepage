@@ -15,22 +15,21 @@ export const Sign = styled(Danger)`
 `;
 
 export const Title = styled.h3`
-  margin: 0;
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+  @media (max-width: ${({theme}) => theme.breakpoints.large}) {
     font-size: 22px;
-    }
+  }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-      font-size: 20px;
-    }
+  @media (max-width: ${({theme}) => theme.breakpoints.medium}) {
+    font-size: 20px;
+  }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-      font-size: 18px;
-    }
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+    font-size: 18px;
+  }
 `;
 
 export const Link = styled.a`
