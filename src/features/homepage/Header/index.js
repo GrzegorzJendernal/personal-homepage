@@ -1,5 +1,5 @@
 import { Container } from './styled';
-import ThemeButton from '../../../common/ThemeButton';
+import ThemeButton from '../ThemeButton';
 
 const Header = ({ content }) => {
     return (

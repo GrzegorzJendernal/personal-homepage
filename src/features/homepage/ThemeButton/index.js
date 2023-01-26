@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectTheme, switchThemeToDark, switchThemeToLight } from "../../features/homepage/homepageSlice";
+import { selectTheme, switchThemeToDark, switchThemeToLight } from "../homepageSlice";
 import { Button, Circle, Container, Sunny, Text } from "./styled";
 
 const ThemeButton = () => {
@@ -17,7 +17,7 @@ const ThemeButton = () => {
                 onClick={changeTheme}
             >
                 <Circle
-                    dark={theme === "light" ? false : true}
+                    dark={theme !== "light"}
                 >
                     <Sunny />
                 </Circle>
