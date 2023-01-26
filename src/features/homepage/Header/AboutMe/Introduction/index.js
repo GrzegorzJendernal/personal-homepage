@@ -7,9 +7,7 @@ const Introduction = () => {
         <Box>
             <Caption>THIS IS</Caption>
             <Name>Grzegorz Jendernal</Name>
-            <Paragraph>I am lorem ipsum bla ckadaskdk lknslafdkf
-                kjfndksjnfkj KJFNKJDndnf kjnfSNFKJLn kjsfnkSNFKSDNFkl
-                kjnfkDNFKndfkndkjfn kjnfkJNFKJDN KNFKdnknd KDJFNdkjnfkjDN KJFNKJ
+            <Paragraph>I am a Frontend Developer. I love using React. I learn quickly and I want to constantly develop myself. I am currently looking for an opportunity to use my skills at work.
             </Paragraph>
             <Link
                 href="mailto:g.jendernal@gmail.com"

@@ -11,7 +11,7 @@ const Contact = () => (
             g.jendernal@gmail.com
         </Mail>
         <Paragraph>
-            I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me.
+            Are you looking for a person who will help you realize your idea for an application or website? Or maybe you are looking for a passionate person to supply your team with fresh blood? I am that person. Feel free to contact me.
         </Paragraph>
     </Container>
 );
