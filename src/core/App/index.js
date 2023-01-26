@@ -19,7 +19,6 @@ const App = () => {
     if (themeName === "dark") return (
       themeDark
     ); return (themeLight)
-
   };
 
   return (
