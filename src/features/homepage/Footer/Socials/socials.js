@@ -11,12 +11,12 @@ export const socialsList = [
     },
     {
         name: "Facebook",
-        link: "https://www.facebook.com/people/Grzegorz-Jendernal/100009370311242/",
+        link: "https://facebook.com/people/Grzegorz-Jendernal/100009370311242/",
         Icon: styledIcon(fb),
     },
     {
         name: "LinkedIN",
-        link: "https://www.linkedin.com/",
+        link: "https://linkedin.com/in/GrzegorzJendernal",
         Icon: styledIcon(lin),
     }
 ];
