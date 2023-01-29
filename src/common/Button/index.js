@@ -1,13 +1,10 @@
-import { StyledButton, ButtonText, Letter } from "./styled";
+import { ButtonText, Letter, StyledButton } from "./styled";
 
 const Button = ({ gitHub, text }) => (
-    <StyledButton>
-        {!gitHub ? (<Letter />) : null
-        }
-        <ButtonText>
-            {text}
-        </ButtonText>
-    </StyledButton>
+  <StyledButton>
+    {!gitHub ? <Letter /> : null}
+    <ButtonText>{text}</ButtonText>
+  </StyledButton>
 );
 
 export default Button;

@@ -6,7 +6,7 @@ export const SpinnerBox = styled.div`
   margin-top: 88px;
 `;
 
-const rotation = keyframes` 
+const rotation = keyframes`
   to {
     transform: rotate(360deg);
   }

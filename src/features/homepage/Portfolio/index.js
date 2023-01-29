@@ -8,23 +8,25 @@ import ErrorPage from "../../../common/states/ErrorPage";
 import { Wrapper } from "./styled";
 
 const Portfolio = () => {
-    const dispatch = useDispatch();
-    const status = useSelector(selectStatus);
+  const dispatch = useDispatch();
+  const status = useSelector(selectStatus);
 
-    useEffect(() => {
-        dispatch(fetchRepos());
-    }, [dispatch]);
+  useEffect(() => {
+    dispatch(fetchRepos());
+  }, [dispatch]);
 
-    return (
-        <Wrapper>
-            <Header />
-            {{
-                loading: <Loader />,
-                success: <ProjectTiles />,
-                error: <ErrorPage />,
-            }[status]}
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Header />
+      {
+        {
+          loading: <Loader />,
+          success: <ProjectTiles />,
+          error: <ErrorPage />,
+        }[status]
+      }
+    </Wrapper>
+  );
 };
 
 export default Portfolio;
