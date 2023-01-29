@@ -1,9 +1,9 @@
-import { socialsList } from "./socials";
+import { socialsLinks } from "./socials";
 import { LinkBox, SocialLink } from "./styled";
 
 const Socials = () => (
     <LinkBox>
-        {socialsList.map(({ name, link, Icon }) => (
+        {socialsLinks.map(({ name, link, Icon }) => (
             <SocialLink
                 key={name}
                 href={link}
