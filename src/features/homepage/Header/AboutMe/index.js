@@ -1,5 +1,5 @@
 import { Box, Photo } from "./styled";
-import facjata from "../../images/gjend.png";
+import portrait from "../../images/portrait.jpg";
 import Introduction from "./Introduction";
 
 const AboutMe = () => {
@@ -7,7 +7,7 @@ const AboutMe = () => {
     return (
         <Box>
             <Photo
-                src={facjata}
+                src={portrait}
                 alt={"portrait"}
             />
             <Introduction />
