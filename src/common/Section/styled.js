@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Ellipse } from "./ellipse.svg";
 
-export const Container = styled.section`
+export const Container = styled.div`
   max-width: 1216px;
   display: grid;
   grid-template-rows: 1fr auto;
