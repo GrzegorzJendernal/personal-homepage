@@ -1,5 +1,22 @@
-import { Description } from "./styled";
+import styled from "styled-components";
 
-const DescriptionText = ({ content }) => <Description>{content}</Description>;
+export const DescriptionText = styled.p`
+  font-size: 20px;
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 140%;
+  color: ${({ theme }) => theme.colors.descriptionText};
+  transition: ${({ theme }) => theme.transition.time};
 
-export default DescriptionText;
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 19px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 17px;
+  }
+`;

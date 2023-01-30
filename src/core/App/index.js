@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
-import { selectTheme } from "../../features/homepage/homepageSlice";
+import { selectTheme } from "../../features/PersonalHomepage/homepageSlice";
 import { GlobalStyle } from "./GlobalStyle";
 import { themeDark, themeLight } from "../theme";
-import PersonalHomepage from "../../features/homepage";
+import PersonalHomepage from "../../features/PersonalHomepage";
 
 const App = () => {
   const themeName = useSelector(selectTheme);

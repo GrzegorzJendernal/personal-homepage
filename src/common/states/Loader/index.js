@@ -1,9 +1,9 @@
-import DescriptionText from "../../DescriptionText";
+import { DescriptionText } from "../../DescriptionText";
 import { Spinner, SpinnerBox } from "./styled";
 
-const Loader = ({ content }) => (
+const Loader = () => (
   <SpinnerBox>
-    <DescriptionText content={content} />
+    <DescriptionText>Please wait, projects are being loaded...</DescriptionText>
     <Spinner />
   </SpinnerBox>
 );

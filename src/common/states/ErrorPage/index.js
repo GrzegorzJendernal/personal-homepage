@@ -1,12 +1,15 @@
 import Button from "../../Button";
-import DescriptionText from "../../DescriptionText";
+import { DescriptionText } from "../../DescriptionText";
 import { ErrorBox, Link, Sign, Title } from "./styled";
 
-const ErrorPage = ({ content }) => (
+const ErrorPage = () => (
   <ErrorBox>
     <Sign />
     <Title>Ooops! Something went wrong... </Title>
-    <DescriptionText content={content} />
+    <DescriptionText>
+      Sorry, failed to load Github projects. {"\n"}
+      You can check them directly on Github.
+    </DescriptionText>
     <Link
       href="https://github.com/GrzegorzJendernal"
       target="_blank"
