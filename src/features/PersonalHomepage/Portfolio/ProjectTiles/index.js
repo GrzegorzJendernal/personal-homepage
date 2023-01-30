@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectRepos } from "../../homepageSlice";
+import { selectRepos } from "../../personalHomepageSlice";
 import { Container, Header, Link, Paragraph, Tile } from "./styled";
 
 const ProjectTiles = () => {

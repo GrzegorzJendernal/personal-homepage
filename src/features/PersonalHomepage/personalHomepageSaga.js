@@ -6,13 +6,13 @@ import {
   takeEvery,
   takeLatest,
 } from "redux-saga/effects";
-import { getRepos } from "../../core/getRepos";
+import { getRepos } from "./getRepos";
 import {
   fetchRepos,
   fetchReposError,
   fetchReposSuccess,
   selectTheme,
-} from "./homepageSlice";
+} from "./personalHomepageSlice";
 import { saveThemeInLocalStorage } from "./themeLocalStorage";
 import { delayTime } from "./delayTime";
 
@@ -31,7 +31,7 @@ function* saveThemeInLocalStorageHandler() {
   yield call(saveThemeInLocalStorage, theme);
 }
 
-export function* homepageSaga() {
+export function* personalHomepageSaga() {
   yield takeLatest(fetchRepos.type, fetchReposHandler);
   yield takeEvery("*", saveThemeInLocalStorageHandler);
 }

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRepos, selectStatus } from "../homepageSlice";
+import { fetchRepos, selectStatus } from "../personalHomepageSlice";
 import Header from "./Header";
 import ProjectTiles from "./ProjectTiles";
 import Loader from "../../../common/states/Loader";

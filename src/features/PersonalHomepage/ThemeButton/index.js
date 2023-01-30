@@ -3,7 +3,7 @@ import {
   selectTheme,
   switchThemeToDark,
   switchThemeToLight,
-} from "../homepageSlice";
+} from "../personalHomepageSlice";
 import { Button, Circle, Container, Sunny, Text } from "./styled";
 
 const ThemeButton = () => {

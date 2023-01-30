@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getThemeFromLocalStorage } from "./themeLocalStorage";
 
-const homepageSlice = createSlice({
-  name: "homepage",
+const personalHomepageSlice = createSlice({
+  name: "personalHomepage",
   initialState: {
     repos: null,
     status: "initial",
@@ -34,7 +34,7 @@ export const {
   fetchReposError,
   switchThemeToDark,
   switchThemeToLight,
-} = homepageSlice.actions;
+} = personalHomepageSlice.actions;
 
 const selectHomepageState = (state) => state.homepage;
 
@@ -42,4 +42,4 @@ export const selectStatus = (state) => selectHomepageState(state).status;
 export const selectRepos = (state) => selectHomepageState(state).repos;
 export const selectTheme = (state) => selectHomepageState(state).theme;
 
-export default homepageSlice.reducer;
+export default personalHomepageSlice.reducer;
