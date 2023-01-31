@@ -10,7 +10,7 @@ const ThemeButton = () => {
 
   return (
     <Container>
-      <Text>DARK MODE {!darkTheme === "light" ? "OFF" : "ON"}</Text>
+      <Text>DARK MODE {!darkTheme ? "OFF" : "ON"}</Text>
       <Button onClick={changeTheme}>
         <Circle dark={darkTheme}>
           <Sunny />
