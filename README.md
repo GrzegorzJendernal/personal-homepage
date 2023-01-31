@@ -15,8 +15,9 @@ your team, please contact me.
 ## Technologies
 
 - React,
+- React Query,
 - NPM,
-- React-Saga,
+- Redux-Saga,
 - Redux (Toolkit),
 - Github API (axios),
 - JavaScript: ES6+,
