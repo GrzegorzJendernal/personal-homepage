@@ -1,5 +1,5 @@
-import Button from "../../Button";
-import { DescriptionText } from "../../DescriptionText";
+import Button from "../../../../../../common/Button";
+import { DescriptionText } from "../../../../../../common/DescriptionText";
 import { ErrorBox, Link, Sign, Title } from "./styled";
 
 const ErrorPage = () => (
