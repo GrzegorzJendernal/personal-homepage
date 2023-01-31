@@ -2,6 +2,7 @@ export const mySkills = [
   "React",
   "React Hooks",
   "React Router",
+  "React Query",
   "Redux",
   "Redux (Toolkit)",
   "Redux-Saga",

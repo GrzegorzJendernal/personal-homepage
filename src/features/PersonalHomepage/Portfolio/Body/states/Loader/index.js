@@ -1,4 +1,4 @@
-import { DescriptionText } from "../../DescriptionText";
+import { DescriptionText } from "../../../../../../common/DescriptionText";
 import { Spinner, SpinnerBox } from "./styled";
 
 const Loader = () => (
