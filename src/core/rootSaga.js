@@ -1,6 +1,6 @@
 import { all } from "redux-saga/effects";
-import { personalHomepageSaga } from "../features/PersonalHomepage/personalHomepageSaga";
+import { themeSaga } from "../features/PersonalHomepage/themeSaga";
 
 export default function* rootSaga() {
-  yield all([personalHomepageSaga()]);
+  yield all([themeSaga()]);
 }

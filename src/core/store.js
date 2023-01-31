@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
-import homepageReducer from "../features/PersonalHomepage/personalHomepageSlice";
+import themeReducer from "../features/PersonalHomepage/themeSlice";
 import rootSaga from "./rootSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
   reducer: {
-    homepage: homepageReducer,
+    theme: themeReducer,
   },
   middleware: [sagaMiddleware],
 });
