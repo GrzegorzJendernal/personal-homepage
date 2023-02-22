@@ -1,6 +1,12 @@
+import React from "react";
 import { Container, Header, List, ListItem, Point } from "./styled";
 
-const Section = ({ title, array }) => (
+interface SectionProps {
+  title: string;
+  array: string[];
+}
+
+const Section = ({ title, array }: SectionProps) => (
   <Container>
     <Header>{title}</Header>
     <List>
