@@ -1,5 +1,6 @@
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectTheme, switchTheme } from "../themeSlice";
+import { selectTheme, switchTheme } from "../../themeSlice";
 import { Button, Circle, Container, Sunny, Text } from "./styled";
 
 const ThemeButton = () => {
