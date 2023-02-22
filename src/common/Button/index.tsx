@@ -1,6 +1,12 @@
+import React from "react";
 import { ButtonText, Letter, StyledButton } from "./styled";
 
-const Button = ({ gitHub, text }) => (
+interface ButtonProps {
+  gitHub?: boolean;
+  text: string;
+}
+
+const Button = ({ gitHub, text }: ButtonProps) => (
   <StyledButton>
     {!gitHub ? <Letter /> : null}
     <ButtonText>{text}</ButtonText>
