@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Sun } from "./sun.svg";
+import { CircleProps } from "../../../../common/types/interfaces";
 
 export const Sunny = styled(Sun)`
   width: 14px;
@@ -16,7 +17,7 @@ export const Circle = styled.div`
   padding: 3px;
   border-radius: 50%;
   background-color: ${({ theme }) => theme.colors.themeButton.circleBackground};
-  transform: translateX(${({ dark }) => (dark ? "20px" : "0px")});
+  transform: translateX(${({ dark }: CircleProps) => (dark ? "20px" : "0px")});
   transition: ${({ theme }) => theme.transition.time};
 `;
 
