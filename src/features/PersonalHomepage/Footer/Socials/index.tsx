@@ -1,3 +1,4 @@
+import React from "react";
 import { socialsLinks } from "./socials";
 import { LinkBox, SocialLink } from "./styled";
 

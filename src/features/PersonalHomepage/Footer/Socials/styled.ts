@@ -23,7 +23,7 @@ export const SocialLink = styled.a`
   }
 `;
 
-export const styledIcon = (Icon) => styled(Icon)`
+export const styledIcon = (Icon: React.FunctionComponent) => styled(Icon)`
   width: 48px;
   height: auto;
 

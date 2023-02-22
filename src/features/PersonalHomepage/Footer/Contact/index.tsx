@@ -1,3 +1,4 @@
+import React from "react";
 import { Container, Invitation, Mail, Paragraph } from "./styled";
 
 const Contact = () => (
