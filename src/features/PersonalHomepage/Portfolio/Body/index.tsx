@@ -5,11 +5,11 @@ import ProjectTiles from "./ProjectTiles";
 import React from "react";
 
 const Body = () => {
-  const { isLoading, isError, data } = useQuery("repos");
+  const { isLoading, isError } = useQuery("repos");
 
   if (isLoading) return <Loader />;
   if (isError) return <ErrorPage />;
-  return <ProjectTiles data={data} />;
+  return <ProjectTiles />;
 };
 
 export default Body;

@@ -40,8 +40,12 @@ export const Header = styled.h3`
   transition: ${({ theme }) => theme.transition.time};
 `;
 
+interface ParagpraphProps {
+  link?: boolean;
+}
+
 export const Paragraph = styled.p`
-  margin: ${({ link }) => (link ? "8px" : "24px")} 0 0;
+  margin: ${({ link }: ParagpraphProps) => (link ? "8px" : "24px")} 0 0;
   font-weight: 400;
   font-size: 18px;
   align-items: center;
