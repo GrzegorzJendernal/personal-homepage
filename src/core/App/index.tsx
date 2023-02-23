@@ -5,6 +5,7 @@ import { selectTheme } from "../../features/PersonalHomepage/themeSlice";
 import { GlobalStyle } from "./GlobalStyle";
 import { theme, themeDark } from "./theme";
 import PersonalHomepage from "../../features/PersonalHomepage";
+import React from "react";
 
 const App = () => {
   const darkTheme = useSelector(selectTheme);

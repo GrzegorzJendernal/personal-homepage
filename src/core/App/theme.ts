@@ -1,4 +1,50 @@
-const colorNames = {
+import { DefaultTheme } from "styled-components";
+
+interface ThemeObject {
+  [index: string]: string;
+}
+
+type ThemeString = string;
+
+interface Colors {
+  background: ThemeString;
+  button: ThemeObject;
+  contact: ThemeObject;
+  descriptionText: ThemeString;
+  errorPage: ThemeString;
+  footerText: ThemeString;
+  header: ThemeObject;
+  loader: ThemeString;
+  portfolio: ThemeObject;
+  section: ThemeObject;
+  socials: ThemeObject;
+  themeButton: ThemeObject;
+}
+
+interface Common {
+  breakpoints: ThemeObject;
+  boxShadow: {
+    boxShadow: string;
+  };
+  transition: {
+    time: string;
+  };
+}
+
+declare module "styled-components" {
+  export interface DefaultTheme {
+    breakpoints: ThemeObject;
+    boxShadow: {
+      boxShadow: string;
+    };
+    transition: {
+      time: string;
+    };
+    colors: Colors;
+  }
+}
+
+const colorNames: ThemeObject = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
   mercury: "#E5E5E5",
@@ -17,7 +63,7 @@ const colorNames = {
   blackText: "#252525",
 };
 
-const common = {
+const common: Common = {
   breakpoints: {
     tiny: "467px",
     small: "524px",
@@ -35,7 +81,7 @@ const common = {
   },
 };
 
-export const theme = {
+export const theme: DefaultTheme = {
   ...common,
   colors: {
     background: colorNames.whiteLilac,

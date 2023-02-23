@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getThemeFromLocalStorage } from "./themeLocalStorage";
+import { RootState } from "../../core/store";
 
 const themeSlice = createSlice({
   name: "theme",
@@ -15,8 +16,9 @@ const themeSlice = createSlice({
 
 export const { switchTheme } = themeSlice.actions;
 
-const selectHomepageState = (state) => state.theme;
+const selectHomepageState = (state: RootState) => state.theme;
 
-export const selectTheme = (state) => selectHomepageState(state).darkTheme;
+export const selectTheme = (state: RootState) =>
+  selectHomepageState(state).darkTheme;
 
 export default themeSlice.reducer;

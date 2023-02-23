@@ -1,3 +1,4 @@
+import React from "react";
 import { DescriptionText } from "../../../../common/DescriptionText";
 import { Container, Logo, Title } from "./styled";
 

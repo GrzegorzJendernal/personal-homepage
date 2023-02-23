@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "../../../../../../common/Button";
 import { DescriptionText } from "../../../../../../common/DescriptionText";
 import { ErrorBox, Link, Sign, Title } from "./styled";

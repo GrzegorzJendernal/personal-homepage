@@ -3,7 +3,7 @@ import { selectTheme } from "./themeSlice";
 import { saveThemeInLocalStorage } from "./themeLocalStorage";
 
 function* saveThemeInLocalStorageHandler() {
-  const theme = yield select(selectTheme);
+  const theme: boolean = yield select(selectTheme);
   yield call(saveThemeInLocalStorage, theme);
 }
 
