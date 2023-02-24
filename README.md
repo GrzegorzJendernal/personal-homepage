@@ -16,6 +16,7 @@ your team, please contact me.
 
 - React,
 - React Query,
+- TypeScript,
 - NPM,
 - Redux-Saga,
 - Redux (Toolkit),
