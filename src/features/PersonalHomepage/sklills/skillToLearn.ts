@@ -1,6 +1,1 @@
-export const skillsToLearn = [
-  "TypeScript",
-  "React Native",
-  "Node.js",
-  "Cypress",
-];
+export const skillsToLearn = ["React Native", "Node.js", "Cypress"];
