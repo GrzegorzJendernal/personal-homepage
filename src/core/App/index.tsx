@@ -3,7 +3,7 @@ import { Normalize } from "styled-normalize";
 import { ThemeProvider } from "styled-components";
 import { selectTheme } from "../../features/PersonalHomepage/themeSlice";
 import { GlobalStyle } from "./GlobalStyle";
-import { theme, themeDark } from "./theme";
+import { theme, themeDark } from "../theme";
 import PersonalHomepage from "../../features/PersonalHomepage";
 import React from "react";
 
