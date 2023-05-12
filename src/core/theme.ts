@@ -1,10 +1,13 @@
-interface ThemeObject {
-  [index: string]: string;
-}
-
 declare module "styled-components" {
   export interface DefaultTheme {
-    breakpoints: ThemeObject;
+    breakpoints: {
+      tiny: string;
+      small: string;
+      mobile: string;
+      medium: string;
+      large: string;
+      mediumDesktop: string;
+    };
     boxShadow: {
       boxShadow: string;
     };
@@ -13,21 +16,59 @@ declare module "styled-components" {
     };
     colors: {
       background: string;
-      button: ThemeObject;
-      contact: ThemeObject;
+      button: {
+        active: string;
+        background: string;
+        border: string;
+        hover: string;
+        text: string;
+      };
+      contact: {
+        email: string;
+        emailHover: string;
+        invitation: string;
+      };
       descriptionText: string;
       errorPage: string;
       footerText: string;
-      header: ThemeObject;
+      header: {
+        caption: string;
+        name: string;
+        text: string;
+      };
       loader: string;
-      portfolio: ThemeObject;
-      section: ThemeObject;
-      socials: ThemeObject;
-      themeButton: ThemeObject;
+      portfolio: {
+        border: string;
+        borderHover: string;
+        link: string;
+        linkUnderline: string;
+        logo: string;
+        repoName: string;
+        text: string;
+        title: string;
+        tileBackground: string;
+      };
+      section: {
+        background: string;
+        divider: string;
+        header: string;
+        point: string;
+        text: string;
+      };
+      socials: {
+        link: string;
+        hover: string;
+      };
+      themeButton: {
+        background: string;
+        border: string;
+        circleBackground: string;
+        sun: string;
+        text: string;
+      };
     };
   }
 }
-
 const colorNames = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
