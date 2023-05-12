@@ -1,34 +1,5 @@
-import { DefaultTheme } from "styled-components";
-
 interface ThemeObject {
   [index: string]: string;
-}
-
-type ThemeString = string;
-
-interface Colors {
-  background: ThemeString;
-  button: ThemeObject;
-  contact: ThemeObject;
-  descriptionText: ThemeString;
-  errorPage: ThemeString;
-  footerText: ThemeString;
-  header: ThemeObject;
-  loader: ThemeString;
-  portfolio: ThemeObject;
-  section: ThemeObject;
-  socials: ThemeObject;
-  themeButton: ThemeObject;
-}
-
-interface Common {
-  breakpoints: ThemeObject;
-  boxShadow: {
-    boxShadow: string;
-  };
-  transition: {
-    time: string;
-  };
 }
 
 declare module "styled-components" {
@@ -40,11 +11,24 @@ declare module "styled-components" {
     transition: {
       time: string;
     };
-    colors: Colors;
+    colors: {
+      background: string;
+      button: ThemeObject;
+      contact: ThemeObject;
+      descriptionText: string;
+      errorPage: string;
+      footerText: string;
+      header: ThemeObject;
+      loader: string;
+      portfolio: ThemeObject;
+      section: ThemeObject;
+      socials: ThemeObject;
+      themeButton: ThemeObject;
+    };
   }
 }
 
-const colorNames: ThemeObject = {
+const colorNames = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
   mercury: "#E5E5E5",
@@ -63,7 +47,7 @@ const colorNames: ThemeObject = {
   blackText: "#252525",
 };
 
-const common: Common = {
+const common = {
   breakpoints: {
     tiny: "467px",
     small: "524px",
@@ -81,7 +65,7 @@ const common: Common = {
   },
 };
 
-export const theme: DefaultTheme = {
+export const theme = {
   ...common,
   colors: {
     background: colorNames.whiteLilac,
