@@ -69,6 +69,7 @@ declare module "styled-components" {
     };
   }
 }
+
 const colorNames = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
