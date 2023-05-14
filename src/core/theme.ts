@@ -1,12 +1,12 @@
 declare module "styled-components" {
   export interface DefaultTheme {
     breakpoints: {
-      tiny: string;
-      small: string;
-      mobile: string;
-      medium: string;
-      large: string;
-      mediumDesktop: string;
+      tiny: "467px";
+      small: "524px";
+      mobile: "767px";
+      medium: "991px";
+      large: "1081px";
+      mediumDesktop: "1440px";
     };
     boxShadow: {
       boxShadow: string;
