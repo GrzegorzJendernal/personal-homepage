@@ -4,6 +4,7 @@ export const mySkills = [
   "React Router",
   "React Query",
   "TypeScript",
+  "Next.js 14",
   "Redux",
   "Redux (Toolkit)",
   "Redux-Saga",
