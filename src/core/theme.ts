@@ -1,3 +1,41 @@
+interface Common {
+  breakpoints: {
+    readonly tiny: string;
+    readonly small: string;
+    readonly mobile: string;
+    readonly medium: string;
+    readonly large: string;
+    readonly mediumDesktop: string;
+  };
+  boxShadow: {
+    readonly boxShadow: string;
+  };
+  transition: {
+    time: string;
+  };
+}
+
+interface Colors {
+  background: string;
+  button: Record<string, string>;
+  contact: Record<string, string>;
+  descriptionText: string;
+  errorPage: string;
+  footerText: string;
+  header: Record<string, string>;
+  loader: string;
+  portfolio: Record<string, string>;
+  section: Record<string, string>;
+  socials: Record<string, string>;
+  themeButton: Record<string, string>;
+}
+
+declare module "styled-components" {
+  export interface DefaultTheme extends Common {
+    readonly colors: Colors;
+  }
+}
+
 const colorNames = {
   white: "#FFFFFF",
   whiteLilac: "#FBFBFE",
@@ -17,7 +55,7 @@ const colorNames = {
   blackText: "#252525",
 };
 
-const common = {
+const common: Common = {
   breakpoints: {
     tiny: "467px",
     small: "524px",
