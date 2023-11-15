@@ -1,1 +1,1 @@
-export const skillsToLearn = ["React Native", "Node.js", "Cypress", "NextJS"];
+export const skillsToLearn = ["C#", "React Native", "Node.js", "Cypress"];
